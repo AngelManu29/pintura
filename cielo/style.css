@@ -1,14 +1,88 @@
 .cielo{
-    background-color: lightblue;
+    background-color: gray;
     height: 50vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
-.sol{
+.luna{
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    background-color: gold;
+    background-color: whitesmoke;
+    animation-name: luna;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    position: relative;
+    animation-iteration-count: 2;
 }
+
+.tren{
+    display: flex;
+    height: 300px;
+    width: 900px;
+    position: relative;
+    left: 600px;
+    top: 40px;
+    background-color: darkgray;
+
+}
+.ventanas1{
+    background-color: gold;
+    height: 100px;
+    width: 120px;
+    position: relative;
+    left: 100px;
+}
+.ventanas2{
+    background-color: gold;
+    height: 100px;
+    width: 120px;
+    position: relative;
+    left: 200px;
+}
+
+.puerta{
+    height: 250px;
+    width: 100px;
+    background-color: saddlebrown;
+    position: relative;
+    top: 50px;
+    left: 300px;
+}
+.via{
+    position: relative;
+    top: 40px;
+    background-color: gray;
+    height: 20px;
+    width: 1500px;
+}
+@keyframes luna {
+    0% {
+        background-color: whitesmoke;
+        left: 0;
+        top: 0
+    }
+    25% {
+        background-color: lightyellow;
+        left: 500px;
+        top: 0
+    }
+    50% {
+        background-color: lightgoldenrodyellow;
+        left: 500px;
+        top: 0
+    }
+    75% {
+        background-color: lightgoldenrodyellow;
+        left: 500px;
+        top: 0
+    }
+    100% {
+        background-color: whitesmoke;
+        left: 0;
+        top: 0
+    }
+}
+
+
